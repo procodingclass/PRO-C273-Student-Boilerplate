@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Bijoya Chowdhury",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -75.33, "left": 17.34, "attrs": {} },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": 148.88, "left": -43.59, "attrs": {} },
+    { "type": "wokwi-ir-remote", "id": "remote1", "top": -51.35, "left": 327.32, "attrs": {} }
+  ],
+  "connections": [
+    [ "ir1:GND", "uno:GND.2", "black", [ "v23.32", "h193.2" ] ],
+    [ "ir1:VCC", "uno:5V", "red", [ "v13.32", "h187.6" ] ],
+    [ "ir1:DAT", "uno:6", "green", [ "v6.59", "h309.24", "v-330.2", "h-94.78" ] ]
+  ]
+}
